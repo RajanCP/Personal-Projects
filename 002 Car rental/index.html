@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avento</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png"
+  </head>
+  <body>
+    <div class="content">
+      <!-- Header -->
+      <header>
+        <!-- Nav -->
+        <div class="nav container">
+          <!-- Logo -->
+          <a href="#" class="logo">Avento<span>.</span></a>
+          <!-- Navbar -->
+          <div class="navbar">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#working-steps" class="nav-link">How it Works</a>
+            <a href="#fleet" class="nav-link">Cars</a>
+            <a href="#blog" class="nav-link">Blog</a>
+            <a href="#review" class="nav-link">Reviews</a>
+          </div>
+          <!-- Nav Icons -->
+          <div class="nav-icons">
+            <a href="#"><i class="bx bx-search"></i></a>
+            <a href="#"><i class="bx bx-user user-icon"></i></a>
+            <!-- Menu Icon -->
+            <div class="menu-icon">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Home -->
+      <section class="home" id="home">
+        <div class="home-content container">
+          <div class="home-img">
+            <img src="img/home.png" alt="" />
+          </div>
+          <form action="" class="input-form">
+            <div class="input-box input-border">
+              <span>Location</span>
+              <input type="search" name="" id="" placeholder="Search Places" />
+            </div>
+            <div class="input-box input-border">
+              <span>Start</span>
+              <input type="date" name="start-date" id="start-date" />
+            </div>
+            <div class="input-box">
+              <span>Return</span>
+              <input type="date" name="return-date" id="return-date" />
+            </div>
+            <i class="bx bx-search search-btn"></i>
+          </form>
+        </div>
+      </section>
+  <!--Steps -->
+  <section class="working-steps container" id="working-steps">
+    <button class="steps-btn">How it Works?</button>
+    <h2>Rent with following 3 working steps</h2>
+    <div class="steps-content">
+      <div class="step-box">
+        <div class="step-icon">
+          <i class="bx bx-map"></i>
+        </div>
+        <h3>Choose location</h3>
+        <p>Choose your location and find your best car</p>
+      </div>
+      <div class="step-box">
+        <div class="step-icon">
+          <i class="bx bx-calendar"></i>
+        </div>
+        <h3>Pick-up date</h3>
+        <p>Select your pick-up date and time to book your car</p>
+      </div>
+      <div class="step-box">
+        <div class="step-icon">
+          <i class="bx bx-car"></i>
+        </div>
+        <h3>Book your car</h3>
+        <p>Book your car and we will deliver it directly to you</p>
+      </div>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <img src="img/banner-1.png" alt="Logo 1">
+        <img src="img/banner-2.png" alt="Logo 2">
+        <img src="img/banner-3.png" alt="Logo 3">
+        <img src="img/banner-4.png" alt="Logo 4">
+        <img src="img/banner-5.png" alt="Logo 5">
+        <img src="img/banner-6.png" alt="Logo 6">
+        <img src="img/banner-7.png" alt="Logo 7"> <!-- Clone to make seamless -->
+        <img src="img/banner-8.png" alt="Logo 8">
+        <img src="img/banner-9.png" alt="Logo 9">
+        <img src="img/banner-10.png" alt="Logo 10">
+      </div>
+    </div>
+  </section>
+  <!--Fleet -->
+  <section class="fleet-selector" id="fleet">
+    <div class="container">
+      <div class="fleet-heading">
+        <h4>Vehicle Models</h4>
+        <h2>Our rental fleet</h2>
+        <p>Explore our curated list of premium rental cars, perfect for any journey in style and comfort.</p>
+      </div>
+      <!-- Model Tabs -->
+      <div class="model-tabs">
+        <button class="model-tab active" data-model="Ghost">Rolls-Royce Ghost</button>
+        <button class="model-tab" data-model="GTR">Nissan GT-R</button>
+        <button class="model-tab" data-model="Panamera">Panamera Turbo</button>
+        <button class="model-tab" data-model="X5">BMW X5</button>
+        <button class="model-tab" data-model="Cayenne">Porsche Cayenne S</button>
+        <button class="model-tab" data-model="Boxster">718 Boxster S</button>
+      </div>
+      <!-- Display Car and Details -->
+      <div class="fleet-display">
+        <div class="car-image-container">
+          <img id="car-image" src="img/rental-1.png" alt="Car Image">
+        </div>
+        <div class="car-details">
+          <h3 id="car-price">$300.00</h3>
+          <p>rent per day</p>
+          <ul>
+            <li>Model: <span id="car-model">Roadster</span></li>
+            <li>Doors: <span id="car-doors">2</span></li>
+            <li>Seats: <span id="car-seats">4</span></li>
+            <li>Transmission: <span id="car-transmission">Automatic</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+      <!-- Trending -->
+      <section class="trending container" id="trending">
+        <!-- Heading -->
+        <div class="heading">
+          <h2>Our Electric Vehicles</h2>
+          <p>Discover our exclusive electric fleet, offering sustainable and high-performance vehicles for a modern driving experience.</p>
+        </div>
+        <!-- Trending Content -->
+        <div class="trending-content">
+          <div class="trend-box">
+            <h4>Electric</h4>
+            <img src="img/trend-1.png" alt="" />
+            <h3>Taycan S</h3>
+            <p>From $299/day</p>
+          </div>
+          <div class="trend-box">
+            <h4>Electric</h4>
+            <img src="img/trend-2.png" alt="" />
+            <h3>Taycan</h3>
+            <p>From $299/day</p>
+          </div>
+          <div class="trend-box">
+            <h4>Electric</h4>
+            <img src="img/trend-3.png" alt="" />
+            <h3>Taycan Turbo</h3>
+            <p>From $299/day</p>
+          </div>
+          <div class="trend-box">
+            <h4>Electric</h4>
+            <img src="img/trend-4.png" alt="" />
+            <h3>Taycan Turismo</h3>
+            <p>From $299/day</p>
+          </div>
+        </div>
+      </section>
+      <!-- Rental -->
+      <section class="rentals container" id="rentals">
+        <!-- Heading -->
+        <div class="heading">
+          <h2>Our Newest Rentals</h2>
+          <p>
+            Explore our newest rentals, featuring iconic models that offer style, comfort, and exceptional performance.
+          </p>
+        </div>
+        <!-- Rentals Content -->
+        <div class="rentals-content">
+
+          <!-- Box 1 -->
+          <div class="rental-box">
+            <div class="rental-top">
+              <h3>Sedan</h3>
+              <i class="bx bxs-heart"></i>
+            </div>
+            <img src="img/rental-1.png" alt="" />
+            <h2>Rolls-Royce Ghost</h2>
+            <h4>Automatic</h4>
+            <div class="price-btn">
+              <p>$299<span>/day</span></p>
+              <a href="#" class="rental-btn">Rent</a>
+            </div>
+          </div>
+          <!-- Box 2 -->
+          <div class="rental-box">
+            <div class="rental-top">
+              <h3>Sedan</h3>
+              <i class="bx bxs-heart"></i>
+            </div>
+            <img src="img/rental-2.png" alt="" />
+            <h2>Macan 4</h2>
+            <h4>Automatic</h4>
+            <div class="price-btn">
+              <p>$299<span>/day</span></p>
+              <a href="#" class="rental-btn">Rent</a>
+            </div>
+          </div>
+          <!-- Box 3 -->
+          <div class="rental-box">
+            <div class="rental-top">
+              <h3>Sedan</h3>
+              <i class="bx bxs-heart"></i>
+            </div>
+            <img src="img/rental-3.png" alt="" />
+            <h2>Cayenne S E-Hybrid</h2>
+            <h4>Automatic/Manual</h4>
+            <div class="price-btn">
+              <p>$299<span>/day</span></p>
+              <a href="#" class="rental-btn">Rent</a>
+            </div>
+          </div>
+          <!-- Box 4 -->
+          <div class="rental-box">
+            <div class="rental-top">
+              <h3>Sedan</h3>
+              <i class="bx bxs-heart"></i>
+            </div>
+            <img src="img/rental-4.png" alt="" />
+            <h2>Nissan GT-R</h2>
+            <h4>Automatic</h4>
+            <div class="price-btn">
+              <p>$299<span>/day</span></p>
+              <a href="#" class="rental-btn">Rent</a>
+            </div>
+          </div>
+          <!-- Box 5 -->
+          <div class="rental-box">
+            <div class="rental-top">
+              <h3>Sedan</h3>
+              <i class="bx bxs-heart"></i>
+            </div>
+            <img src="img/rental-5.png" alt="" />
+            <h2>Panamera Turbo</h2>
+            <h4>Automatic</h4>
+            <div class="price-btn">
+              <p>$299<span>/day</span></p>
+              <a href="#" class="rental-btn">Rent</a>
+            </div>
+          </div>
+          <!-- Box 6 -->
+          <div class="rental-box">
+            <div class="rental-top">
+              <h3>Sedan</h3>
+              <i class="bx bxs-heart"></i>
+            </div>
+            <img src="img/rental-6.png" alt="" />
+            <h2>BMW X5</h2>
+            <h4>Automatic/Manual</h4>
+            <div class="price-btn">
+              <p>$299<span>/day</span></p>
+              <a href="#" class="rental-btn">Rent</a>
+            </div>
+          </div>
+          <!-- Box 7 -->
+          <div class="rental-box">
+            <div class="rental-top">
+              <h3>Sedan</h3>
+              <i class="bx bxs-heart"></i>
+            </div>
+            <img src="img/rental-7.png" alt="" />
+            <h2>Cayenne Turbo</h2>
+            <h4>Automatic</h4>
+            <div class="price-btn">
+              <p>$299<span>/day</span></p>
+              <a href="#" class="rental-btn">Rent</a>
+            </div>
+          </div>
+          <!-- Box 8 -->
+          <div class="rental-box">
+            <div class="rental-top">
+              <h3>Sedan</h3>
+              <i class="bx bxs-heart"></i>
+            </div>
+            <img src="img/rental-8.png" alt="" />
+            <h2>718 Boxster S</h2>
+            <h4>Automatic</h4>
+            <div class="price-btn">
+              <p>$299<span>/day</span></p>
+              <a href="#" class="rental-btn">Rent</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stories-section" id="blog">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Stories Behind the Wheel</h2>
+          </div>
+          <div class="stories-container">
+            <!-- Story Card 1 -->
+            <div class="story-card">
+              <div class="story-date">
+                <span class="date-day">7</span>
+                <div class="date-details">
+                  <span>January</span>
+                  <span>2024</span>
+                </div>
+              </div>
+              <h3 class="story-title">Adventures on the Open Road</h3>
+              <p class="story-description">Join us as we dive into the exhilarating stories of travelers who embarked on unforgettable journeys with Avento.</p>
+              <img src="img/story1.jpg" alt="Adventure on the Open Road">
+            </div>
+      
+            <!-- Story Card 2 -->
+            <div class="story-card">
+              <div class="story-date">
+                <span class="date-day">13</span>
+                <div class="date-details">
+                  <span>March</span>
+                  <span>2024</span>
+                </div>
+              </div>
+              <h3 class="story-title">Luxury and Comfort: Experiences</h3>
+              <p class="story-description">In this series, we highlight the luxurious touches, unparalleled comfort, and exceptional service that make every ride.</p>
+              <img src="img/story2.jpg" alt="Luxury and Comfort">
+            </div>
+      
+            <!-- Story Card 3 -->
+            <div class="story-card">
+              <div class="story-date">
+                <span class="date-day">22</span>
+                <div class="date-details">
+                  <span>July</span>
+                  <span>2024</span>
+                </div>
+              </div>
+              <h3 class="story-title">Cars That Adapt to Your Lifestyle</h3>
+              <p class="story-description">Read about how our versatile vehicles have seamlessly integrated into the lives of professionals and families alike.</p>
+              <img src="img/story3.jpg" alt="Cars for Your Lifestyle">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq-section">
+        <div class="container">
+          <div class="faq-heading">
+            <h2>FAQ</h2>
+            <h2>Frequently Asked Questions</h2>
+            <p>Your questions answered – find out more about our services and policies below.</p>
+          </div>
+      
+          <div class="faq-content">
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What is the minimum rental period?</span>
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>The minimum rental period is 24 hours. You can rent for a single day or as long as needed.</p>
+              </div>
+            </div>
+      
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Can I add additional drivers?</span>
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes, you can add additional drivers to your rental. Additional charges may apply.</p>
+              </div>
+            </div>
+      
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What should I do in case of an accident?</span>
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>In case of an accident, contact our support team immediately, and follow the instructions provided.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials-section" id="review">
+        <div class="container">
+          <div class="testimonials-heading">
+            <h2>Clients' Testimonials</h2>
+            <p>Discover what our clients have to say about our premium rental service.</p>
+          </div>
+      
+          <!-- Testimonials Slider -->
+          <div class="testimonials-slider">
+            <button class="slider-btn prev-btn">&#10094;</button>
+            <div class="testimonial-cards-container">
+              <!-- Testimonial 1 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">"The service was fantastic! The car was pristine and the rental process was seamless."</p>
+                <div class="client-info">
+                  <img src="img/profile-1.png" alt="Client photo 1" class="client-photo">
+                  <div>
+                    <p class="client-name">James Garcia</p>
+                    <p class="client-location">London</p>
+                  </div>
+                </div>
+                <i class="quote-icon bx bxs-quote-right"></i>
+              </div>
+      
+              <!-- Testimonial 2 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">"Amazing experience! Reliable, fast, and very convenient. Will definitely rent again."</p>
+                <div class="client-info">
+                  <img src="img/profile-2.png" alt="Client photo 2" class="client-photo">
+                  <div>
+                    <p class="client-name">Steve Lopez</p>
+                    <p class="client-location">Manchester</p>
+                  </div>
+                </div>
+                <i class="quote-icon bx bxs-quote-right"></i>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">"Professional service with top-quality cars. Highly recommended for any occasion."</p>
+                <div class="client-info">
+                  <img src="img/profile-3.png" alt="Client photo 3" class="client-photo">
+                  <div>
+                    <p class="client-name">James Wong</p>
+                    <p class="client-location">Birmingham</p>
+                  </div>
+                </div>
+                <i class="quote-icon bx bxs-quote-right"></i>
+              </div>
+            </div>
+            <button class="slider-btn next-btn">&#10095;</button>
+          </div>
+          <!-- Slider Dots -->
+          <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <div class="footer">
+        <div class="footer-content container">
+          <div class="footer-box">
+            <a href="#" class="logo">Avento<span>.</span></a>
+            <p>63 Glendale Road Office, North London,
+              United Kingdom </p>
+            <div class="social">
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+              <a href="#"><i class="bx bxl-tiktok"></i></a>
+              <a href="#"><i class="bx bxl-pinterest-alt"></i></a>
+            </div>
+          </div>
+          <div class="footer-box">
+            <h3>Opening Hours</h3>
+            <p><span>Mon</span>: 9:00 - 18:30</p>
+            <p><span>Tue</span>: 9:00 - 18:30</p>
+            <p><span>Wed</span>: 9:00 - 18:30</p>
+            <p><span>Thu</span>: 9:00 - 18:30</p>
+            <p><span>Fri</span>: 9:00 - 18:30</p>
+            <p><span>Sat</span>: 9:00 - 18:30</p>
+            <p><span>Sun</span>: Closed</p>
+          </div>
+          <div class="footer-box">
+            <h3>Information</h3>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Cars</a>
+            <a href="#">Trending</a>
+            <a href="#">Reviews</a>
+          </div>
+          <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p>+441234567890</p>
+            <p>contact@avento.com <br />contact@avento.com</p>
+            <p>
+              Address: 63 Glendale Road Office, North London,
+               United Kingdom 
+            </p>
+          </div>
+        </div>
+        <p class="copyright">&#169; 2024 Avento</p>
+      </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
